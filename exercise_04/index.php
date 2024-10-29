@@ -30,16 +30,22 @@
 </head>
 
 <body>
-    <form action="index.php" method="post">
-        <label>Username:</label><br>
-        <input type="text" name="username"><br>
+    </div>
+    <a href="./exercise.php">To the exercise</a>
+
+    <div>
         <br>
-        <label>Password:</label><br>
-        <input type="password" name="password"><br>
-        <br>
-        <input type="submit" value="Log in">
-        <br>    
-    </form>
+
+        <form action="index.php" method="post">
+            <label>Username:</label><br>
+            <input type="text" name="username"><br>
+            <br>
+            <label>Password:</label><br>
+            <input type="password" name="password"><br>
+            <br>
+            <input type="submit" value="Log in">
+            <br>
+        </form>
 
 </body>
 
