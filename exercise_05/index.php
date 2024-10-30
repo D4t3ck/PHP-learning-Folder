@@ -21,14 +21,19 @@
         }
 
         button {
-            width: 200px;
+            width: auto;
+        }
 
-
+        a {
+            text-decoration: none;
         }
     </style>
 </head>
 
 <body>
+    <button><a href="./exercise.php">To the exercise</a></button>
+    <br>
+    <br>
     <form action="index.php" method="post">
         <div class="form_actions">
             <label>x:</label>
