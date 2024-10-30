@@ -2,8 +2,10 @@
 // if statement = if some condition is true, then do something
 // if condition is false, don't do it 
 -->
+<a href="./exercise.php">To the exercise</a><br><br>
 
 <?php
+
 // example 01
 $age = 18;
 
