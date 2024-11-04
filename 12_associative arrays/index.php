@@ -6,6 +6,10 @@
  // item => price
   -->
 
+<a href="./exercise.php">To the exercise</a>
+<br>
+<br>
+
 <?php
 $capitals = array(
     "Germany" => "Berlin",
