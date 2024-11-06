@@ -12,10 +12,17 @@
 // }
 // echo add(10, 20);
 
-function is_even($number){
-    return $number % 2;
+// function is_even($number){
+//     return $number % 2;
+// }
+
+// echo is_even(1);
+
+function hypo($a, $b) {
+    $c = sqrt($a ** 2 + $b ** 2);
+    return $c;
 }
 
-echo is_even(1);
+echo hypo(3, 4)
 ?>
 
