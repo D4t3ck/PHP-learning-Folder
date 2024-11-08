@@ -20,18 +20,29 @@ session_start()
 </head>
 
 <body>
-    This is the login page
-    <br>
-    <a href="home.php">To the home page</a>
-    <br>
+    <form action="index.php" method="post">
+        username: <br>
+        <input type="text" name="username"> <br>
+        password: <br>
+        <input type="text" name="password"> <br> <br>
+        <input type="submit" name="login" value="login">
+    </form>
 </body>
 
 </html>
 
 <?php
-$_SESSION['username'] = "testuser";
-$_SESSION['password'] = "test123";
+if (isset($_POST['login'])) { // if the login button is clicked
 
-// echo $_SESSION['username'] . "<br>";
-// echo $_SESSION['password'] . "<br>";
+
+    if (!empty($_POST['username']) && !empty($_POST['password'])) { // if the username and password fields are not empty
+        $_SESSION['username'] = $_POST['username']; // store the username in the session
+        $_SESSION['password'] = $_POST['password']; // store the password in the session
+
+       header("Location: home.php"); // redirect to the home page
+    } else {
+        echo "Please fill in all fields";
+    }
+
+}
 ?>
