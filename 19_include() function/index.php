@@ -6,6 +6,10 @@
  // Changes only need to be made in one place
   -->
 
+  <?php
+  include 'header.html';
+  ?>
+
   <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -14,10 +18,13 @@
     <title>Document</title>
   </head>
   <body>
+
+  This is the Homepage <br>
+  Stuff about your Homepage can go here <br>
     
   </body>
   </html>
 
   <?php
-  
+  include 'footer.html';
   ?>
