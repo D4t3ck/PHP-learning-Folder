@@ -30,7 +30,7 @@
 //     echo $key . "=>" . $value . "<br>";
 // }                                        // This will display all the server variables
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") { // This will display the username entered in the form
-    echo "Hello " . $_POST['username'];
+if ($_SERVER["REQUEST_METHOD"] == "POST") { // checks if request is POST to be saved in the server variables array 
+    echo "Hello " . $_POST['username'];      // This will display the username entered in the form
 }
 ?>
